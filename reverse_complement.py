@@ -13,13 +13,13 @@ class Reverse_complement:
             sequence = seq.read().upper()
         return sequence
 
-    def reverse(self):
+    def get_reverse(self):
         """
         :return: returns the 3' 5' directionality nucleotide sequence.
         """
         return self.get_sequence()[::-1]
 
-    def complement(self):
+    def get_complement(self):
         """
         :return: returns the complementary sequence of nucleotides.
         """
@@ -35,7 +35,7 @@ class Reverse_complement:
                 complement += 'C'
         return complement
 
-    def reverse_complement(self):
+    def get_reverse_complement(self):
         """
         :return: returns the reverse sequence of the complementary sequence of nucleotides.
         """
